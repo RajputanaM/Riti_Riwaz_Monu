@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register for Royal Weddings</title>
+    <!-- Include CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script>
+        function redirectToHomepage() {
+            window.location.href = "homepage.html";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <img src="images/logo.png" alt="">
+        <h1 class="register-title">Register your details with Riti-Riwaz</h1>
+        <form class="register-form" onsubmit="redirectToHomepage(); return false;">
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+        <option value="Bride">Groom</option>
+        <option value="Groom">Bride</option>
+        <option value="Other">Other</option>
+      </select>
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="name" required>
+            <label for="lastName">Sr. Name:</label>
+            <input type="text" id="lastName" name="srname" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phoneNumber">Mobile Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <label for="weddingDate">Date of Wedding:</label>
+            <input type="date" id="weddingDate" name="weddingDate" required>
+            <label for="location">Your Location:</label>
+            <input type="text" id="location" name="location" required>
+            <input type="submit" value="Submit" class="register-submit-button">
+        </form>
+    </div>
+</body>
+
+</html>

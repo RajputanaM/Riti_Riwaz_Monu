@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wedding Website</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="container mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#venues" class="btn btn-primary btn-nav" onclick="smoothScroll('#venues')">Venues</a>
+                <a href="#photograph" class="btn btn-primary btn-nav" onclick="smoothScroll('#photograph')">Photographers</a>
+                <a href="#mehndi" class="btn btn-primary btn-nav" onclick="smoothScroll('#mehndi')">Mehndi Artist</a>
+                <a href="#makeup" class="btn btn-primary btn-nav" onclick="smoothScroll('#makeup')">Makeup/hair</a>
+                <a href="#food" class="btn btn-primary btn-nav" onclick="smoothScroll('#food')">Caterers</a>
+            </div>
+        </div>
+    </header>
+    <!-- Large Header with Welcome Text -->
+    <header class="jumbotron text-center head">
+        <h1 class="display-4">Your wedding is in good hands with us!</h1>
+        <p class="lead">"So kick back and savor every minute of it"</p>
+    </header>
+
+
+    <!-- Wedding Venue Cards -->
+    <!-- Wedding Venue Cards -->
+    <section class="container mt-5" id="venues">
+        <h2 class="text-center">Wedding Venues</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/venue_1.jpeg" alt="Venue 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Venue1 Name</h5>
+                        <p class="card-text">Description about Wedding Venue</p>
+                        <a href="#" class="btn btn-primary btn-view-details">Book Venue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/venue_2.jpeg" alt="Venue 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Venue2 Name</h5>
+                        <p class="card-text">Description about Wedding Venue</p>
+                        <a href="#" class="btn btn-primary btn-view-details">Book Venue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/venue_3.jpeg" alt="Venue 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Venue3 Name</h5>
+                        <p class="card-text">Description about Wedding Venue</p>
+                        <a href="#" class="btn btn-primary btn-view-details">Book Venue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/venue_4.jpeg" alt="Venue 4" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Venue4 Name</h5>
+                        <p class="card-text">Description about Wedding Venue</p>
+                        <a href="#" class="btn btn-primary btn-view-details">Book Venue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Add Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.15/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function smoothScroll(target) {
+            var targetElement = document.querySelector(target);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth' // Add smooth scrolling animation effect
+            });
+        }
+    </script>
+</body>
+
+</html>

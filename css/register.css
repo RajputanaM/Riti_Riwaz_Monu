@@ -1,0 +1,84 @@
+/* test.css */
+
+body {
+    background: #404874;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 60px;
+}
+
+img {
+    max-width: 400px;
+    margin-right: 20px;
+    margin-left: 80px;
+}
+
+.register-container {
+    max-width: 500px;
+    padding: 50px;
+    background-color: rgb(85, 123, 174);
+    border-radius: 45px 45px 45px 45px;
+    margin-top: 80px;
+}
+
+.register-title {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.register-form {
+    margin-top: 20px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.register-form input[type="submit"] {
+    background-color: #2b24b4;
+    color: black;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register-form input[type="submit"]:hover {
+    background-color: #FFD700;
+    font-size: 20px;
+}
+
+.register-submit-button:hover {
+    background-color: #3cb4d9;
+}
+
+
+/* Set the initial background color of the input field to orange */
+
+.register-form input,
+.register-form select {
+    background-color: #23242a;
+    border: 0px 6px 6px 0px solid #23242a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
